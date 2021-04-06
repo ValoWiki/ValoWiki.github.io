@@ -131,7 +131,6 @@ window.onload = function() {
     cPath = "./" + cPath; 
     let aPaths = paths.filter(p => cPath == "./" ? p.startsWith(cPath) && p != cPath : p.startsWith(cPath + "/") && p != cPath)
     let fPaths = myFilter(aPaths,cPath)
-    console.log(cPath)
     let _main = cPath.split("/").splice(1).map(v => "..").join("/") + "/";
     if(cPath != "./") {
         let _a = document.createElement('a')
