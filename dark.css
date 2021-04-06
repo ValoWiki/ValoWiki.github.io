@@ -1,0 +1,20 @@
+hr {
+    border: 2px solid #ff4654;
+}
+body {
+    background-color: #101823;
+}
+a {
+    color: #ff4654;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+a:visited {
+    color: #db1c2c;
+}
+a:hover {
+    color: aquamarine;
+}
+a:active {
+    color: aqua;
+}
