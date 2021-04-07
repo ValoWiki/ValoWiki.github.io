@@ -132,18 +132,16 @@ window.onload = function() {
     let aPaths = paths.filter(p => cPath == "./" ? p.startsWith(cPath) && p != cPath : p.startsWith(cPath + "/") && p != cPath)
     let fPaths = myFilter(aPaths,cPath)
     console.log(cPath)
-    let _main = cPath.split("/").splice(1).map(v => "..").join("/") + "/";
     if(cPath != "./") {
         let _a = document.createElement('a')
-        _a.innerHTML = `<img src="${_main}assists/up.png" width="25px" height="25px"/> ./..<br>`
+        _a.innerHTML = `<img src="/assists/up.png" width="25px" height="25px"/> ./..<br>`
         _a.href = "..";
         document.body.appendChild(_a)
     }
     for(let fP of fPaths) {
-        let _br = document.createElement('br')
         let _a = document.createElement('a')
         let t = fP.split("/")[fP.split("/").length-1]
-        _a.innerHTML = `<img src="${_main}assists/${getIco(fP)}.png" width="25px" height="25px"/> ./${t}<br>`
+        _a.innerHTML = `<img src="/assists/${getIco(fP)}.png" width="25px" height="25px"/> ./${t}<br>`
         _a.href = t
         document.body.appendChild(_a)
         }
