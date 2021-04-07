@@ -116,7 +116,8 @@ let paths = [
     "./cdn/abilities/icons/15/C.png",
     "./cdn/abilities/icons/15/Q.png",
     "./cdn/abilities/icons/15/E.png",
-    "./cdn/abilities/icons/15/X.png"
+    "./cdn/abilities/icons/15/X.png",
+    "./cdn/abilities/icons/15/X2.png"
 ];
 
 window.onload = function() {
