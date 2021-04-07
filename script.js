@@ -117,7 +117,15 @@ let paths = [
     "./cdn/abilities/icons/15/Q.png",
     "./cdn/abilities/icons/15/E.png",
     "./cdn/abilities/icons/15/X.png",
-    "./cdn/abilities/icons/15/X2.png"
+    "./cdn/abilities/icons/15/X2.png",
+    "./metadata",
+    "./metadata/en",
+    "./metadata/en/1.0.0",
+    "./metadata/en/1.0.0/agents_by_name.json",
+    "./metadata/en/1.0.0/agents_by_number.json",
+    "./metadata/en/lts",
+    "./metadata/en/lts/agents_by_name.json",
+    "./metadata/en/lts/agents_by_number.json"
 ];
 
 window.onload = function() {
@@ -161,9 +169,10 @@ function myFilter(arr,cP) {
 
 function getIco(f) {
     for(let ft of [
-        ['.png','image']
+        ['.png','image'],
+        ['.json','json3']
     ]){
-        if(f.endsWith(ft[0])) return 'image';
+        if(f.endsWith(ft[0])) return ft[1];
     }
     return 'folder';
 }
