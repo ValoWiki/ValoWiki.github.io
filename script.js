@@ -135,7 +135,7 @@ let paths = [
     "./metadata/en",
     "./metadata/en/v1",
     "./metadata/en/v1/agents_by_name.json",
-    "./metadata/en/b1/agents_by_number.json"
+    "./metadata/en/v1/agents_by_number.json"
 ];
 
 window.onload = function() {
