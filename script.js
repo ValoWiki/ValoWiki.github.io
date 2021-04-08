@@ -133,12 +133,9 @@ let paths = [
     "./cdn/utils/ping/4.png",
     "./metadata",
     "./metadata/en",
-    "./metadata/en/1.0.0",
-    "./metadata/en/1.0.0/agents_by_name.json",
-    "./metadata/en/1.0.0/agents_by_number.json",
-    "./metadata/en/lts",
-    "./metadata/en/lts/agents_by_name.json",
-    "./metadata/en/lts/agents_by_number.json"
+    "./metadata/en/v1",
+    "./metadata/en/v1/agents_by_name.json",
+    "./metadata/en/b1/agents_by_number.json"
 ];
 
 window.onload = function() {
